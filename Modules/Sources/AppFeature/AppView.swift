@@ -36,7 +36,7 @@ public struct AppView: View {
                             )
                         )
                         .onAppear {
-                            viewStore.start()
+                            viewStore.listStart()
                         }
                     case .details:
                         DetailsPage(
@@ -57,7 +57,7 @@ public struct AppView: View {
 }
 
 fileprivate extension ViewStore<AppFeature.State, AppFeature.Action> {
-    func start() {
+    func listStart() {
         send(.list(.start))
     }
 }

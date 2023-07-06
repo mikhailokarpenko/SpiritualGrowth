@@ -22,7 +22,7 @@ public struct FlowingColorView: View {
     }
 
     private func startAnimating() {
-        timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { _ in
+        timer = Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true) { _ in
             withAnimation {
                 hueRotation += .degrees(5)
             }

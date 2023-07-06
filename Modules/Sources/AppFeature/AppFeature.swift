@@ -56,12 +56,6 @@ public struct AppFeature: ReducerProtocol {
             }
         }
         Scope(
-            state: \.welcomeState,
-            action: /Action.welcome
-        ) {
-            WelcomeFeature()
-        }
-        Scope(
             state: \.listState,
             action: /Action.list
         ) {
